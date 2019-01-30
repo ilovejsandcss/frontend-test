@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Style The Button</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+      .btn {
+        border-radius: 1.5em;
+        border: #fff solid 3px;
+        box-sizing: border-box;
+        box-shadow: 0 0 0 2px #000,
+        3px 3px 10px 3px rgba(0, 0, 0, .3);
+        background-image:
+                linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 7%, rgba(0, 0, 0, 0) 93%, rgba(0, 0, 0, 1) ),
+                linear-gradient(to top, #000000, #464749 60%, #3f3f41 95%, #000000),
+                linear-gradient(to top, #000, #000);
+        background-size: 100% 50%, 100% 40%, 100% 100%;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 1.563em 3.189em;
+        transition:  border-color .3s ease;
+      }
+
+      .btn:hover {
+        border-color: #be1e2d;
+      }
+
+      .btn:before,
+      .btn:after {
+        content: '\2665';
+        color: #be1e2d;
+        display: inline-block;
+        margin: 0 .5em;
+        vertical-align: middle;
+      }
+      /*because its annoying when button is in corner of window*/
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#" class="btn">Bozboz</a>
+  </body>
+</html>
